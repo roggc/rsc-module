@@ -1,0 +1,30 @@
+{
+  "name": "rsc-module",
+  "version": "1.0.0",
+  "description": "React Server Components module to be used in The RSC Setup (https://github.com/roggc/rsc)",
+  "main": "index.js",
+  "exports": {
+    "./client": "./dist/client.js",
+    "./server": "./dist/server.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "author": "roger gomez castells (roggc)",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">=18.2.0",
+    "react-dom": ">=18.2.0",
+    "express": ">=4.18.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-react": "^7.22.15",
+    "@rollup/plugin-babel": "^6.0.3",
+    "rollup": "^3.29.4"
+  }
+}
