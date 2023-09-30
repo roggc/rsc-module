@@ -18,7 +18,7 @@ export default [
     plugins: [babel({ babelHelpers: "bundled", exclude: "node_modules/**" })],
   },
   {
-    input: "src/eject.js",
+    input: "./eject.js",
     output: {
       format: "esm",
       file: "dist/eject.js",
