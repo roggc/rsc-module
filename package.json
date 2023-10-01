@@ -5,8 +5,10 @@
   "main": "index.js",
   "exports": {
     "./client": "./dist/client.js",
-    "./server": "./dist/server.js",
-    ".": "./dist/eject.js"
+    "./server": "./dist/server.js"
+  },
+  "bin": {
+    "rsc-module": "./dist/eject.js"
   },
   "type": "module",
   "scripts": {
@@ -26,7 +28,8 @@
     "@babel/core": "^7.23.0",
     "@babel/preset-react": "^7.22.15",
     "@rollup/plugin-babel": "^6.0.3",
-    "rollup": "^3.29.4"
+    "rollup": "^3.29.4",
+    "rollup-plugin-preserve-shebang": "^1.0.1"
   },
   "dependencies": {
     "fast-glob": "^3.3.1",
