@@ -1,6 +1,6 @@
 {
   "name": "rsc-module",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "React Server Components module to be used in The RSC Setup (https://github.com/roggc/rsc)",
   "main": "index.js",
   "exports": {
