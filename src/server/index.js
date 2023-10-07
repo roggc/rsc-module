@@ -4,7 +4,7 @@ import { renderToPipeableStream } from "react-dom/server";
 import { renderJSXToClientJSX, stringifyJSX } from "./utils/index.js";
 import React from "react";
 
-export const runApp = (Router, HTML) => {
+export const getApp = (Router, HTML) => {
   const app = express();
   app.use(express.static("public"));
   app.use(express.json());
@@ -47,11 +47,7 @@ export const runApp = (Router, HTML) => {
     res.end();
   });
 
-  const port = process.env.PORT || 8080;
-
-  app.listen(port, () => {
-    console.log(`app listening on port ${port}`);
-  });
+  return app;
 };
 
 export { RCC } from "./components/rcc.js";
